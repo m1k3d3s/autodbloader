@@ -62,7 +62,7 @@ public class DirWatcher {
 		String user = "sqluser";
 		String pw = "sqlusermd";
 		Connection connect = null;
-		String sql = "LOAD DATA LOCAL INFILE '/home/mikedes/historicaldata/csvfiles/"+csvfile+ "' INTO TABLE historicalprices FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES";
+		String sql = "LOAD DATA LOCAL INFILE '/historicaldata/csvfiles/"+csvfile+ "' INTO TABLE historicalprices FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES";
 		Logger LOGGER = Logger.getLogger(DirWatcher.class.getName());
         LOGGER.setLevel(Level.INFO);
 		try {
